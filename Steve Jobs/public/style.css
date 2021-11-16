@@ -1,0 +1,47 @@
+@charset "UTF-8";
+body.fondo{
+	background-color: lightblue;
+	font-family: Times New Roman;
+}
+header.titulo {
+	text-align: center;
+	color: blue;
+}
+header h1::first-letter{
+	color: black;
+	font-size: 250%;
+	font-weight: normal;
+}
+nav.subtitulos{
+	color: blue;
+	text-align: center;
+}
+nav.subtitulos a:hover{
+	background-color: yellow;
+	color: red;
+}
+blockquote:first-line{
+	color: red;
+}
+a:link{
+	background-color: white;
+}
+a:visited{
+	background-color: blue;
+	color: white;
+}
+img.jobs{
+	float: right;
+	position: relative;
+	bottom: 50px;
+}
+h2.cuenta{
+	counter-reset: cuenta-productos;
+}
+p.num::before{
+	content: counter(cuenta-productos) ". ";
+	counter-increment: cuenta-productos;
+}
+footer.fin{
+	font-style: oblique;
+}
